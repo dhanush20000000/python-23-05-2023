@@ -1,0 +1,10 @@
+n = int(input("Enter the size of the array: "))
+arr = []
+print("Enter", n-1, "numbers from 1 to", n-1, "in random order:")
+for i in range(n-1):
+    num = int(input(f"Enter number {i+1}: "))
+    arr.append(num)
+expected_sum = (n - 1) * n // 2
+actual_sum = sum(arr)
+missing_number = expected_sum - actual_sum
+print("The missing number is:", missing_number)
