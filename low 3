@@ -1,0 +1,9 @@
+def insert_delete_numbers(arr, insert_num, insert_index, delete_index):
+    print("Initial array:", arr)
+    arr.insert(insert_index, insert_num)
+    print("Array after insertion:", arr)
+    del arr[delete_index]
+    print("Array after deletion:", arr)
+if __name__ == "__main__":
+    insert_delete_numbers([10, 20, 30, 40], 25, 2, 3)
+    insert_delete_numbers([1, 2, 3, 4, 5], 6, 5, 1)
