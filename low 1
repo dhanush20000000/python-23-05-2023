@@ -1,0 +1,9 @@
+my_array = [1, 2, 3, 4, 5]
+print("Elements of the array:")
+for element in my_array:
+    print(element)
+print("Elements of the array (using list comprehension):")
+[print(element) for element in my_array]
+print("Elements of the array (using join function):")
+print(", ".join(str(element) for element in my_array))
+print("Array:", my_array)
