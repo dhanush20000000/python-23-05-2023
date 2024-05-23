@@ -1,0 +1,22 @@
+n1 = int(input("Enter the number of elements in first array: "))
+array1 = []
+for i in range(n1):
+    num = float(input(f"Enter element {i+1} of first array: "))
+    array1.append(num)
+n2 = int(input("Enter the number of elements in second array: "))
+array2 = []
+for i in range(n2):
+    num = float(input(f"Enter element {i+1} of second array: "))
+    array2.append(num)
+if n1 != n2:
+    print("Arrays are not the same as they have different number of elements.")
+else:
+    same = True
+    for i in range(n1):
+        if array1[i] != array2[i]:
+            same = False
+            break
+    if same:
+        print("Arrays are the same.")
+    else:
+        print("Arrays are not the same.")
