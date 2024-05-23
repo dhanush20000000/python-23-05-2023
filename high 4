@@ -1,0 +1,12 @@
+first_array = [5, 3, 8, 2, 9]
+second_array = [7, 4, 6, 1, 10]
+max_first = first_array[0]
+for num in first_array:
+    if num > max_first:
+        max_first = num
+min_second = second_array[0]
+for num in second_array:
+    if num < min_second:
+        min_second = num
+product = max_first * min_second
+print("Product of maximum element of first array and minimum element of second array:", product)
