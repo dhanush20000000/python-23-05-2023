@@ -1,0 +1,12 @@
+def search_element(arr, element):
+    for i in range(len(arr)):
+        if arr[i] == element:
+            return i
+    return -1  
+my_array = [3, 7, 1, 9, 4]
+user_element = int(input("Enter the element to search for: "))
+position = search_element(my_array, user_element)
+if position != -1:
+    print(f"The element {user_element} is found at position {position}.")
+else:
+    print(f"The element {user_element} is not found in the array.")
